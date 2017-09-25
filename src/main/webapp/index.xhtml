@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Ola Mundo</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:inputText  id="mensagem" value="#{helloController.mensagem}"></h:inputText>
+		<h:commandButton value="Clica aê" action="#{helloController.trocarMensagem}"></h:commandButton>
+	</h:form>
+	<h:form>
+		<h:inputText id="outraMensagem" value="#{helloController.outraMensagem}"></h:inputText>
+		<h:commandButton value="Ou clica aqui" action="#{helloController.trocarMensagem2}"></h:commandButton>
+	</h:form>
+
+</h:body>
+</html>
